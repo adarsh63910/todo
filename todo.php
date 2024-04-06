@@ -99,23 +99,6 @@
 		}
 	}
 	
-	//function UpdateTodo($todo, $id, $connection) {
-		// Escape user inputs to prevent SQL injection
-		//$todo = mysqli_real_escape_string($connection, $todo);
-		$id = mysqli_real_escape_string($connection, $id);
-	
-		// Construct the update query
-		$query = "UPDATE todos SET todo = '$todo' WHERE id = '$id'";
-		
-		// Execute the query
-		$result = mysqli_query($connection, $query);
-		
-		// Check for errors
-		if (!$result) {
-			// Print and handle the error
-			die(mysqli_error($connection));
-		}
-	
 	
  ?>
  
