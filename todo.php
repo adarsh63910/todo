@@ -98,15 +98,7 @@
 			die(mysqli_error($connection));
 		}
 	}
-	function UpTodo($todo,$id,$connection)
-	{
-		$query = "Update todos set todo = '$todo' where id = '$id' ";
-		$result = mysqli_query($connection,$query);
-		//if (mysqli_error($connection)) {
-		if (!$result) {
-			die(mysqli_error($connection));
-		}
-	}
+	
 	//function UpdateTodo($todo, $id, $connection) {
 		// Escape user inputs to prevent SQL injection
 		//$todo = mysqli_real_escape_string($connection, $todo);
